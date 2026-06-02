@@ -1,15 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/dental/Header";
+import HeroSection from "@/components/dental/HeroSection";
+import ProblemSection from "@/components/dental/ProblemSection";
+import SolutionSection from "@/components/dental/SolutionSection";
+import AdvantagesSection from "@/components/dental/AdvantagesSection";
+import StepsSection from "@/components/dental/StepsSection";
+import BeforeAfterSection from "@/components/dental/BeforeAfterSection";
+import PricingSection from "@/components/dental/PricingSection";
+import TrustSection from "@/components/dental/TrustSection";
+import FormSection from "@/components/dental/FormSection";
+import FaqSection from "@/components/dental/FaqSection";
+import ContactsSection from "@/components/dental/ContactsSection";
+import Footer from "@/components/dental/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
-      <span className="absolute bottom-8 left-1/2 -translate-x-1/2 inline-block bg-[#FF6637] text-white text-sm px-4 py-2 rounded-full whitespace-nowrap">
-        Подождите 5 минут, Юра создает первую версию проекта с нуля
-      </span>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <HeroSection />
+        <ProblemSection />
+        <SolutionSection />
+        <AdvantagesSection />
+        <StepsSection />
+        <BeforeAfterSection />
+        <PricingSection />
+        <TrustSection />
+        <FormSection />
+        <FaqSection />
+        <ContactsSection />
+      </main>
+      <Footer />
     </div>
   );
 };
